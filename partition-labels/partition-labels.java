@@ -1,9 +1,11 @@
 class Solution {
     public List<Integer> partitionLabels(String S) {
         int[] last = new int[26];
+        //record the last index of each char
         for (int i = 0; i < S.length(); ++i)
             last[S.charAt(i) - 'a'] = i;
         
+        //record the end index of the current substring
         int j = 0, anchor = 0;
         List<Integer> ans = new ArrayList();
         for (int i = 0; i < S.length(); ++i) {
