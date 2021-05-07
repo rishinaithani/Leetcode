@@ -4,7 +4,7 @@
             boolean[] dp = new boolean[s.length() + 1];
             Set<String> wordDictSet = new HashSet(wordDict);
             dp[0] = true;
-            for (int i = 1; i <= s.length(); i++) {
+           for (int i = 1; i <= s.length(); i++) {
                 for (int j = 0; j < i; j++) {
                     if (wordDictSet.contains(s.substring(j, i)) && dp[j]) {
                         dp[i] = true;
@@ -14,4 +14,4 @@
             }
             return dp[s.length()];
         }
-    }
+    } 
