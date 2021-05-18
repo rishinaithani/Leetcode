@@ -1,3 +1,11 @@
+/*Sort the horizontalCuts and verticalCuts array
+First we will see the horizontal cuts, to start get the max between the first cut and the difference of the height and the last element
+Loop through the remaining elements from index 1 to the length and get the maxHeight computed.
+Do the same for vertical cuts and compute the maxWidth
+return the product of maxHeight and maxWidth
+Since the test cases are huge we want to convert the area to long data type and the result needs to be the % of 1000000007
+*/
+
 class Solution {
     public int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {
         
